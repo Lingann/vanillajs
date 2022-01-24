@@ -1,0 +1,22 @@
+{
+  // "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // 保存时使用eslint校验文件
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "fileheader.configObj": {
+    "autoAdd": false, // 默认开启
+    "createHeader": false // 默认打开
+  },
+  "fileheader.customMade": {
+    "Date": "Do not edit", // 文件创建时间(不变)
+    "LastEditors": "Do not edit", // 文件最后编辑者
+    "LastEditTime": "Do not edit", // 文件最后编辑时间
+    "FilePath": "Do not edit", // 文件在项目中的相对路径 自动更新
+    "Description": ""
+  },
+  "autoprefixer.formatOnSave": true,
+  "autoprefixer.options": {
+    "browsers": ["last 4 versions", "ie >= 9", "> 5%"]
+  }
+}
