@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        height: 500px;
+        width: 800px;
+        border: 1px solid red;
+        position: relative;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: beige;
+        font-size: 14px;
+      }
+
+      #child1 {
+        display: inline-block;
+        margin-left: 200px;
+      }
+
+      #child2 {
+        position: absolute;
+        left: 200px;
+        top: 120px;
+      }
+
+      #child3 {
+        position: fixed;
+        bottom: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child1" class="child"></div>
+      <div id="child2" class="child"></div>
+      <div id="child3" class="child"></div>
+    </div>
+  </body>
+
+  <script>
+    const child1 = document.getElementById('child1')
+    child1.innerText = `top:${child1.offsetTop} \n left:${child1.offsetLeft}`
+    const child2 = document.getElementById('child2')
+    child2.innerText = `top:${child2.offsetTop} \n left:${child2.offsetLeft}`
+    const child3 = document.getElementById('child3')
+    child3.innerText = `top:${child3.offsetTop} \n left:${child3.offsetLeft}`
+  </script>
+</html>
